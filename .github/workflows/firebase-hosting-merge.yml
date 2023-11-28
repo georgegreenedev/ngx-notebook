@@ -18,7 +18,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NGX_NOTEBOOK }}'
           channelId: live
           projectId: ngx-notebook
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          env:
+        env:
           FIREBASE_CLI_EXPERIMENTS: webframeworks
